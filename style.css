@@ -75,8 +75,8 @@ ul {
   font-family: "Ponomar", system-ui;
   position: absolute;
   top: 30%;
-  left: 50%; /* Заміна margin-left на left */
-  transform: translateX(-50%); /* Центрування */
+  left: 45%; 
+  transform: translateX(-50%); 
   text-align: center;
 }
 
@@ -121,4 +121,16 @@ ul {
   width: 500px;
   /* Змінюйте розмір за потребою */
   height: auto;
+}
+
+.link {
+  position: absolute;
+  top: 50%;        
+  left: 50%;        
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-left: 113px;
+  padding-right: 113px;
+  
+
 }
