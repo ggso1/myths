@@ -63,26 +63,49 @@ ul {
 
 /* hero section */
 .hero {
-  background: radial-gradient(circle, #2a0845 30%, #40465f 60%, #1f2833 100%);
+  background: radial-gradient(circle, #110f12 30%, #423737 60%, #1f2833 100%);
   background-size: cover;
   height: 100vh;
   position: relative;
 }
 
 .hero-title {
-  font-size: 50px;
+  font-size: 150px;
   color: white;
   font-family: "Ponomar", system-ui;
+  position: absolute;
+  top: 30%;
+  left: 50%; /* Заміна margin-left на left */
+  transform: translateX(-50%); /* Центрування */
+  text-align: center;
+}
+
+.ukrainian-text {
+  position: absolute;
+  left: 700px;
+  top: 60%;
+  color: white;
+  font-family: "Ponomar", system-ui;
+  font-size: 150px;
 }
 
 .hero-description {
-  font-size: 20px;
-  color: white;
-  font-family: "Didact Gothic", sans-serif;
-}
+    font-size: 20px;
+    color: white;
+    font-family: "Didact Gothic", sans-serif;
+    position: absolute;
+    left: 200px;
+    top: 60%;
+    line-height: 30px;
+    width: 600px;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  
+
 
 /* header */
-.logo-link img {
+.logo-link {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -91,3 +114,11 @@ ul {
   z-index: 10;
 }
 
+.logo-link-2 {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  width: 500px;
+  /* Змінюйте розмір за потребою */
+  height: auto;
+}
