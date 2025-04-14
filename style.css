@@ -203,3 +203,124 @@ ul {
   flex-direction: column;
 
 }
+
+/* Міфічні істоти */
+
+.cards-title {}
+
+.cards-section {
+  padding: 200px 0;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  gap: 0;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  width: 400px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.img-lisovyk {
+  background-image: url('./images/lisovic.jpg');
+}
+
+.img-mavka {
+  background-image: url('./images/mavka.jpg');
+}
+
+.img-rusalka {
+  background-image: url('./images/rusalka.jpg');
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover~.card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -4px 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.modal.show {
+  transform: translateX(0);
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Місця */
