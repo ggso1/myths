@@ -235,15 +235,22 @@ ul {
 }
 
 .img-lisovyk {
-  background-image: url('./images/lisovic.jpg');
+  background-image: url('./images/lisovick.jpg');
 }
 
 .img-mavka {
-  background-image: url('./images/mavka.jpg');
+  background-image: url('./images/mavka.png');
+}
+.img-perelesnyk {
+  background-image: url('./images/perelesnyk.jpg');
 }
 
-.img-rusalka {
-  background-image: url('./images/rusalka.jpg');
+.img-chort {
+  background-image: url('./images/chort.jpg');
+}
+
+.img-chugayster {
+  background-image: url('./images/chugayster.jpg');
 }
 
 .card:not(:first-child) {
