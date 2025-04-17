@@ -9,6 +9,8 @@ body {
   line-height: 1.5;
 }
 
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -64,7 +66,7 @@ ul {
 
 /* hero section */
 .hero {
-  background: radial-gradient(circle, #110f12 30%, #423737 60%, #1f2833 100%);
+  background: linear-gradient(135deg, #6E6652, #4F6D53, #2B2B2B);
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -146,6 +148,7 @@ ul {
   color: white;
   transition: color 0.3s ease;
   text-decoration: none;
+  padding: 40px;
 }
 
 .link:hover {
@@ -331,3 +334,75 @@ svg {
 }
 
 /* Місця */
+.place{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 100px 0;
+  margin-bottom: 100px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 20px;
+  padding: 10px;
+}
+
+.item p {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.size-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+
+}
+
+.place-img {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); /* червона тінь */
+  border-radius: 10px;
+}
+
+/* Карта */
+
+.map-img {
+  position: relative;
+}
+
+#zoom-image {
+  width: 100%;
+  max-width: 100%;
+  cursor: crosshair;
+  display: block;
+}
+
+.zoom-overlay {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  display: none;
+  z-index: 10;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.map-img{
+  width: 1000px;
+}
+
+/* Відео */
+.video{
+  padding: 100px;
+}
