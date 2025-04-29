@@ -208,201 +208,138 @@ ul {
 }
 
 /* Міфічні істоти */
-
-.cards-title {}
-
 .cards-section {
-  padding: 200px 0;
-}
-
-.cards-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  gap: 0;
-  position: relative;
-}
-
-.card {
-  display: flex;
   flex-direction: column;
-  height: 550px;
-  width: 400px;
-  background-color: #17141d;
-  border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000;
-  transition: 0.4s ease-out;
-  position: relative;
-  left: 0px;
-}
-
-.img-lisovyk {
-  background-image: url('./images/lisovick.jpg');
-}
-
-.img-mavka {
-  background-image: url('./images/mavka.png');
-}
-.img-perelesnyk {
-  background-image: url('./images/perelesnyk.jpg');
-}
-
-.img-chort {
-  background-image: url('./images/chort.jpg');
-}
-
-.img-chugayster {
-  background-image: url('./images/chugayster.jpg');
-}
-
-.card:not(:first-child) {
-  margin-left: -50px;
-}
-
-.card:hover {
-  transform: translateY(-20px);
-  transition: 0.4s ease-out;
-}
-
-.card:hover~.card {
-  position: relative;
-  left: 50px;
-  transition: 0.4s ease-out;
+  margin-top: 50px;
 }
 
 .title {
-  color: white;
-  font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
-  position: absolute;
-  left: 20px;
-  top: 15px;
-}
-
-
-.card:hover .filledbar {
-  width: 120px;
-  transition: 0.4s ease-out;
-}
-
-.circle {
-  position: absolute;
-  top: 150px;
-  left: calc(50% - 60px);
-}
-
-
-.card:hover .stroke {
-  stroke-dashoffset: 100;
-  transition: 0.6s ease-out;
-}
-
-svg {
-  fill: #17141d;
-  stroke-width: 2px;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  background-color: #fff;
-  box-shadow: -4px 0 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(100%);
-}
-
-.modal.show {
-  transform: translateX(0);
-}
-
-.modal-content {
-  padding: 20px;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-/* Місця */
-.place{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  padding: 100px 0;
-  margin-bottom: 100px;
-}
-
-.scroll-container {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  gap: 20px;
   padding: 10px;
+  margin-bottom: 30px;
+  background-color: rgb(253, 48, 48);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
-.item p {
-  margin-top: 8px;
-  font-size: 16px;
-  color: #333;
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 1000px; 
+  height: auto;
+  margin: 0 auto;
 }
 
-.size-img {
-  width: 400px;
+
+.item {
+  width: 300px;
   height: 400px;
-  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
 
+  background-color: #ffffff;
+
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 5px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 }
 
-.place-img {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); /* червона тінь */
-  border-radius: 10px;
+.item-title {
+  font-weight: bold;
 }
 
-/* Карта */
-
-.map-img {
-  position: relative;
-}
-
-#zoom-image {
-  width: 100%;
-  max-width: 100%;
-  cursor: crosshair;
-  display: block;
-}
-
-.zoom-overlay {
-  position: absolute;
-  width: 200px;
+.item-image img {
   height: 200px;
-  border: 2px solid #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-repeat: no-repeat;
-  background-size: 200%;
-  display: none;
-  z-index: 10;
-  pointer-events: none;
-  border-radius: 50%;
 }
 
-.map-img{
-  width: 1000px;
+.parts-pay {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-/* Відео */
-.video{
-  padding: 100px;
+.parts-pay img {
+  height: 24px;
+}
+
+.price {
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 5px;
+  padding: 3px 6px;
+  margin-bottom: 6px;
+  display: flex;
+}
+
+.price div:first-child {
+  width: 100px;
+  font-size: 20px;
+}
+
+.price div:first-child span {
+  text-decoration-line: line-through;
+}
+
+.prise div:first-child sup {
+  font-size: 12px;
+}
+
+.price div:last-child {
+  font-size: 24px;
+}
+
+.price div:last-child sup {
+  font-size: 14px;
+}
+
+.bonus {
+  background-color: rgb(253, 48, 48);
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.bonus div:first-child {
+  width: 100px;
+  font-size: 14px;
+}
+
+.bonus div:last-child {
+  font-size: 24px;
+}
+
+.bonus div:last-child sup {
+  font-size: 14px;
+}
+
+.contacts p {
+  margin: 3px;
+}
+
+.contacts p:first-child {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contacts p:last-child {
+  border-left: 3px solid rgb(253, 48, 48);
+}
+
+.info {
+  font-size: 9px;
+  text-align: justify;
+  color: rgb(120, 120, 120);
 }
