@@ -6,7 +6,7 @@ async function buildItems() {
         let itemsDiv = document.createElement('div');
         itemsDiv.classList.add('item');
 
-        itemsDiv.style.backgroundImage = `url('img/${item.img}')`;
+        itemsDiv.style.backgroundImage = `url('images/${item.img}')`;
         itemsDiv.style.backgroundSize = 'cover';
         itemsDiv.style.backgroundPosition = 'center';
 
@@ -16,7 +16,7 @@ async function buildItems() {
         itemsDiv.addEventListener('click', () => {
             document.getElementById('modal-title').innerText = item.title;
             document.getElementById('modal-description').innerText = item.description;
-            document.getElementById('modal-image').src = `img/${item.modalImg}`;
+            document.getElementById('modal-image').src = `images/${item.modalImg}`;
             document.getElementById('modal').style.display = 'block';
         });
         
