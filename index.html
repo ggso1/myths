@@ -77,25 +77,35 @@
         </div>
     </section>
 
-    
-        <div class="container">
-            <section class="cards-section">
-            <div class="title">Товари на які діє знижкка </div>
-            
-            <!-- Блок товарів -->
-            <div id="items" class="items">
+    <content>
+        <!-- Блокзаголовку -->
+        <div class="title">Міфічні істоти</div>
+        <!-- Блок товарів -->
+        <div id="items" class="items">
+
+        </div>
+        <!-- Модальне вікно -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+                <h2 id="modal-title"></h2>
+                <img id="modal-image" src="" alt="" />
+                <p id="modal-description"></p>
+
 
             </div>
         </div>
-    </section>
+
+    </content>
 
 
 
-    
+
 
 
 </body>
 
-<script src="card.js"></script>
+<script src="/js/market.js"></script>
+<script src="/js/items.json"></script>
 
 </html>
