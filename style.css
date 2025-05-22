@@ -54,15 +54,17 @@ ul {
   overflow: hidden;
 }
 
-.section {
-  padding: 48px 15px;
-}
-
 .container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px; /* бокові відступи */
   max-width: 1200px;
 }
+
+.section {
+  padding: 60px 0; /* відступи зверху і знизу */
+  margin-bottom: 60px; /* відступ між секціями */
+}
+
 
 /* hero section */
 .hero {
@@ -315,6 +317,8 @@ ul {
    gap: 2px;
    width: 1500px;
    height: 1000px;
+   margin: 0 auto;
+
  }
 
  .parent>div {
