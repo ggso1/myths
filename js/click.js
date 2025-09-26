@@ -13,3 +13,30 @@ window.onclick = (event) => {
     }
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modal-img");
+    const modalTitle = document.getElementById("modal-title");
+    const modalDescription = document.getElementById("modal-description");
+    const closeBtn = document.querySelector(".close");
+
+    document.querySelectorAll(".gallery-item img").forEach(img => {
+        img.addEventListener("click", () => {
+            const parent = img.parentElement;
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            modalTitle.textContent = parent.dataset.title;
+            modalDescription.textContent = parent.dataset.description;
+        });
+    });
+
+    closeBtn.onclick = () => {
+        modal.style.display = "none";
+    }
+
+    window.onclick = (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+});
