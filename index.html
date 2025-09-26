@@ -89,44 +89,42 @@
         <!-- Модальне вікно -->
         <div id="modal" class="modal">
             <div class="modal-content">
-                <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+                <span class="close">&times;</span>
                 <h2 id="modal-title"></h2>
                 <img id="modal-image" src="" alt="" />
                 <p id="modal-description"></p>
             </div>
         </div>
+
     </content>
 
     <section class="section">
         <div class="container">
             <div class="parent">
-                <div class="div1">
-                    <img src="/img/karpaty.png" alt="Карпати" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="gallery-item" data-title="Карпати" data-description="Гори на заході України.">
+                    <img src="/img/karpaty.png" alt="Карпати">
+                    <div class="overlay-text">Карпати</div>
                 </div>
-                <div class="div2">
-                    <img src="/img/6.png" alt="Карпати" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="gallery-item" data-title="Львів" data-description="Старовинне місто на заході.">
+                    <img src="/img/6.png" alt="Львів">
+                    <div class="overlay-text">Львів</div>
                 </div>
-                <div class="div3">
-                    <img src="/img/donesk.png" alt="Карпати" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="gallery-item" data-title="Донецьк" data-description="Місто на сході України.">
+                    <img src="/img/donesk.png" alt="Донецьк">
+                    <div class="overlay-text">Донецьк</div>
                 </div>
-                <div class="div4">
-                    <img src="/img/prichornom.png" alt="Карпати" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="div5">
-                    <img src="/img/polisia.png" alt="Карпати" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="div6">
-                    <img src="/img/2.png" alt="Карпати" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="div7">
-                    <img src="/img/lugansina.png" alt="Карпати" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="div9">
-                    <img src="/img/krym.png" alt="Карпати" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
+                <!-- Додай інші картинки так само -->
             </div>
         </div>
     </section>
+    
+    <!-- Модальне вікно -->
+<div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div id="modal-caption"></div>
+</div>
+
 
 
 
@@ -139,5 +137,6 @@
 
 <script src="/js/market.js"></script>
 <script src="/js/items.json"></script>
+<script src="/js/click.js"></script>
 
 </html>
