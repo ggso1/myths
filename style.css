@@ -69,7 +69,7 @@ ul {
 
 /* hero section */
 .hero {
-  background: linear-gradient(135deg, #000000, #040f06, #240a0a);
+
   background-size: cover;
   height: 100vh;
   position: relative;
