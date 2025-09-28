@@ -77,7 +77,6 @@ ul {
 
 .hero-title {
   color: white;
-  font-family: "Ponomar", system-ui;
   font-size: 120px;
   text-align: center;
 }
@@ -86,7 +85,6 @@ ul {
   position: absolute;
   font-size: 130px;
   color: white;
-  font-family: "Ponomar", system-ui;
 }
 
 .hero-description {
@@ -164,7 +162,6 @@ ul {
   font-size: 64px;
   font-weight: 900;
   line-height: 1.3;
-  font-family: "Ponomar", system-ui;
   color: #6b0000;
 }
 
@@ -195,9 +192,9 @@ ul {
 
 .title {
   width: auto;
-  padding: 10px;
+  /* padding: 10px;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 10px; */
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
@@ -206,7 +203,7 @@ ul {
   text-align: center;
   font-weight: bold;
   letter-spacing: 3px;
-  font-family: "Ponomar", system-ui;
+  margin: 150px 0 20px; 
 }
 
 .items {
@@ -273,11 +270,10 @@ ul {
   right: 0;
   width: 50%;
   height: 100%;
-  /* або max-height: 100vh */
   overflow-y: auto;
-  /* робимо вертикальний скрол */
   padding: 20px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 #modal-image {
@@ -444,24 +440,14 @@ ul {
 /* Map */
 .mapukraine {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    /* прибираємо margin */
-    padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  /* прибираємо margin */
+  padding: 20px 0;
 
 }
 
-.section-title {
-  text-align: center;
-  /* по центру сторінки */
-  color: #fff;
-  /* білий текст */
-  font-size: 2.5rem;
-  /* розмір заголовка */
-  margin: 150px 0 20px;
-  /* відступ зверху і знизу */
-}
 .section:last-child {
   margin-bottom: 0;
   /* прибираємо зайвий нижній відступ */
@@ -498,6 +484,133 @@ ul {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   /* закруглені краї блоку */
+}
+
+/* book */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 20px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.square {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.square1 {
+  background-image: url('img/Mafkalogo.png');
+}
+
+.square2 {
+  background-image: url('img/Chortlogo.png');
+}
+
+.square3 {
+  background-image: url('img/Lisoviclogo.png');
+}
+
+.square4 {
+  background-image: url('img/Poterchatalogo.png');
+}
+
+.square:hover {
+  background-color: #2980b9;
+}
+
+/* Модальне вікно */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  width: auto;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close:hover {
+  color: #ddd;
+}
+
+/* Книга */
+.book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  width: 400px;
+  height: 550px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.prev,
+.next {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Зображення сторінки */
+.page img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
 }
 
 /* ====== Ноутбуки (до 1400px) ====== */
