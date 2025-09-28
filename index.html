@@ -28,11 +28,11 @@
                         </a>
 
                         <ul class="header-menu">
-                            <li><a href="#" class="link" href="#traditions-section">Язичництво</a></li>
-                            <li><a href="#" class="link" href="#chef-section">Міфічні істоти</a></li>
-                            <li><a href="#" class="link" href="#formats-section">Міфічні місця</a></li>
-                            <li><a href="#" class="link" href="#formats-section">Легенди</a></li>
-
+                            <li><a href="#traditions-section" class="link">Язичництво</a></li>
+                            <li><a href="#creatures-section" class="link">Міфічні істоти</a></li>
+                            <li><a href="#places-section" class="link">Міфічні місця</a></li>
+                            <li><a href="#book-section" class="link">Щоденники</a></li>
+                            <li><a href="#music-section" class="link">Музика</a></li>
                         </ul>
                     </nav>
 
@@ -60,9 +60,13 @@
         </section>
     </main>
 
+    <div class="section-divider">
+        <img src="images/branch.png" alt="Декоративна гілка">
+    </div>
+
     <section class="section">
         <div class="container">
-            <div class="vira-content">
+            <div id="traditions-section" class="vira-content">
                 <img class="vira-img" src="./images/vira.jpg" alt="Язичництво">
                 <div class="vira">
                     <h2 class="vira-title">Язичництво</h2>
@@ -79,14 +83,11 @@
         </div>
     </section>
 
-    <content>
-        <!-- Блокзаголовку -->
+    <content id="creatures-section">
         <div class="title">Міфічні істоти</div>
-        <!-- Блок товарів -->
         <div id="items" class="items">
-
         </div>
-        <!-- Модальне вікно -->
+
         <div id="modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -99,7 +100,7 @@
     </content>
 
 
-    <h1 class="title">Карта України</h1>
+    <h1 id="places-section" class="title">Карта України</h1>
     <div class="mapukraine">
 
         <svg xmlns:mapsvg="http://mapsvg.com" xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -223,7 +224,7 @@
         </div>
     </div>
 
-    <h1 class="title">Щоденники міфічних істот</h1>
+    <h1 id="book-section" class="title">Щоденники міфічних істот</h1>
 
     <div class="grid-container">
         <div class="square square1" data-title="Книга 1"></div>
@@ -254,60 +255,86 @@
         </div>
     </div>
 
-    <div class="video-section">
+    <div id="music-section" class="video-section">
         <h1 class="title">Магічна музика</h1>
         <h2 class="subtitle">Клікніть на відео і почуйте в музиці історію</h2>
 
         <div class="video-flex">
-            <div>
+            <div class="video-item">
                 <h3 class="video-title">Лея - Чугайстер</h3>
                 <a href="https://www.youtube.com/watch?v=mii55chW_44" target="_blank">
                     <img src="https://img.youtube.com/vi/mii55chW_44/hqdefault.jpg" alt="Відео 6">
                 </a>
             </div>
 
-            <div>
+            <div class="video-item">
                 <h3 class="video-title">KARNA - Прометей</h3>
                 <a href="https://www.youtube.com/watch?v=n2DM8ZgYIp4" target="_blank">
                     <img src="https://img.youtube.com/vi/n2DM8ZgYIp4/hqdefault.jpg" alt="Моє відео">
                 </a>
             </div>
 
-            <div>
+            <div class="video-item">
                 <h3 class="video-title">TEREN - Mara</h3>
                 <a href="https://www.youtube.com/watch?v=6xC2NBYwadQ" target="_blank">
                     <img src="https://img.youtube.com/vi/6xC2NBYwadQ/hqdefault.jpg" alt="Відео 1">
                 </a>
             </div>
 
-            <div>
+            <div class="video-item">
                 <h3 class="video-title">Лея - Відьма</h3>
                 <a href="https://www.youtube.com/watch?v=Yj-ejhIiPGo" target="_blank">
                     <img src="https://img.youtube.com/vi/Yj-ejhIiPGo/hqdefault.jpg" alt="Відео 5">
                 </a>
             </div>
 
-            <div>
+            <div class="video-item">
                 <h3 class="video-title">Цукрова Вата - Русалка</h3>
                 <a href="https://www.youtube.com/watch?v=8ek3ed7Oub4" target="_blank">
                     <img src="https://img.youtube.com/vi/8ek3ed7Oub4/hqdefault.jpg" alt="Відео 2">
                 </a>
             </div>
 
-            <div>
+            <div class="video-item">
                 <h3 class="video-title">Лея - Чугайстер</h3>
                 <a href="https://www.youtube.com/watch?v=yJXiaULBPZc" target="_blank">
                     <img src="https://img.youtube.com/vi/yJXiaULBPZc/hqdefault.jpg" alt="Відео 4">
                 </a>
             </div>
 
-            <div>
+            <div class="video-item">
                 <h3 class="video-title">Лея - Домовик</h3>
                 <a href="https://www.youtube.com/watch?v=fYrbalC-HYg" target="_blank">
                     <img src="https://img.youtube.com/vi/fYrbalC-HYg/hqdefault.jpg" alt="Відео 3">
                 </a>
             </div>
         </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-bg"></div>
+        <div class="footer-container">
+            <img src="../images/logo.png" alt="Logo" class="footer-logo">
+            <nav class="footer-nav">
+                <a href="#traditions-section" class="link">Язичництво</a></li>
+                <a href="#creatures-section" class="link">Міфічні істоти</a></li>
+                <a href="#places-section" class="link">Міфічні місця</a></li>
+                <a href="#book-section" class="link">Щоденники</a></li>
+                <a href="#music-section" class="link">Музика</a></li>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><img src="../images/tg.png" alt="Telegram"></a>
+                <a href="#"><img src="../images/ds.png" alt="Discord"></a>
+                <a href="#"><img src="../images/inst.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2025 Містичний Світ. Всі права захищені</p>
+    </footer>
+
+
+
+
+
 
 
 </body>

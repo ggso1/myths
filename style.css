@@ -15,6 +15,8 @@ body {
   padding: 0;
 }
 
+
+
 html,
 body {
   height: 100%;
@@ -24,6 +26,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -63,8 +66,7 @@ ul {
 }
 
 .section {
-  padding: 60px 0;
-  margin-bottom: 60px;
+  margin: 50px;
 }
 
 /* hero section */
@@ -92,7 +94,7 @@ ul {
   color: white;
   font-family: "Didact Gothic", sans-serif;
   position: absolute;
-  left: 200px;
+  left: 100px;
   top: 60%;
   line-height: 30px;
   width: 600px;
@@ -145,6 +147,20 @@ ul {
   color: #ce4c4c;
 }
 
+.section-divider {
+  text-align: center;
+  /* розміщує гілку по центру */
+  margin: 50px 0;
+  /* відступи зверху і знизу */
+}
+
+.section-divider img {
+  width: 150px;
+  /* можна регулювати розмір гілки */
+  opacity: 0.7;
+  /* трохи прозорості для елегантності */
+}
+
 /* vira */
 .vira {
   display: flex;
@@ -192,9 +208,6 @@ ul {
 
 .title {
   width: auto;
-  /* padding: 10px;
-  margin: 0 auto;
-  margin-top: 10px; */
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
@@ -203,7 +216,7 @@ ul {
   text-align: center;
   font-weight: bold;
   letter-spacing: 3px;
-  margin: 150px 0 20px; 
+  margin: 150px 0 20px;
 }
 
 .items {
@@ -614,6 +627,10 @@ ul {
 }
 
 /* video */
+.video-section {
+  margin-bottom: 100px;
+  /* або будь-яке інше значення, яке підходить */
+}
 
 .video-flex {
   display: flex;
@@ -652,7 +669,106 @@ ul {
   margin-top: 10px;
 }
 
-/* footer */
+/* Footer */
+.footer {
+  position: relative;
+  padding: 40px 20px 20px 20px;
+  background-color: #0b0f0a;
+  color: #cad1bb;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.footer-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.05), transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.07), transparent 60%);
+  animation: rotateBG 60s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotateBG {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-nav a:hover {
+  color: var(--color-brand-normal);
+  transform: translateY(-2px);
+}
+
+.social-icons a img {
+  width: 32px;
+  border-radius: 9px;
+  filter: drop-shadow(0 0 5px #ec4b4b);
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px #df2121);
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-nav {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .social-icons a img {
+    margin: 0 10px;
+  }
+}
+
 
 /* ====== Ноутбуки (до 1400px) ====== */
 @media (max-width: 1400px) {
