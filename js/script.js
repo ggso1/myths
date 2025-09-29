@@ -6,10 +6,10 @@ const bookPrev = bookModal.querySelector('.prev');
 const bookNext = bookModal.querySelector('.next');
 
 const books = {
-    "Книга 1": ["img/Mafka.png", "img/M1.jpg", "img/M2.jpg", "img/M3.jpg"],
-    "Книга 2": ["img/Chort.jpg", "img/CH1.jpg", "img/CH2.jpg", "img/CH3.jpg"],
-    "Книга 3": ["img/Lisovic.png", "img/L1.jpg", "img/L2.jpg", "img/L3.jpg"],
-    "Книга 4": ["img/Poterchata.png", "img/P1.jpg", "img/P2.jpg", "img/P3.jpg"]
+    "Книга 1": ["img/Mafka.png", "img/M1.JPG", "img/M2.JPG", "img/M3.JPG"],
+    "Книга 2": ["img/Chort.JPG", "img/CH1.JPG", "img/CH2.JPG", "img/CH3.JPG"],
+    "Книга 3": ["img/Lisovic.png", "img/L1.JPG", "img/L2.JPG", "img/L3.JPG"],
+    "Книга 4": ["img/Poterchata.png", "img/P1.JPG", "img/P2.JPG", "img/P3.JPG"]
 };
 
 let currentBook = [];
