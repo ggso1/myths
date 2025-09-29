@@ -26,7 +26,7 @@ bookSquares.forEach(square => {
 
 bookClose.addEventListener('click', () => bookModal.style.display = 'none');
 bookModal.addEventListener('click', e => {
-    if (!bookModal.querySelector('.modal-content').contains(e.target)) {
+    if (!bookModal.querySelector('modal-content').contains(e.target)) {
         bookModal.style.display = 'none';
     }
 });
