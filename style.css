@@ -1,18 +1,13 @@
-@charset "UTF-8";
 
-:root {}
 
 /* Base */
-body {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.5;
-}
+
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Didact Gothic", sans-serif;
 }
 
 
@@ -27,6 +22,9 @@ background: linear-gradient(to bottom, #0b0c10, #1f2833, #0b0c10);
   background-repeat: no-repeat;
   background-attachment: fixed;
   scroll-behavior: smooth;
+    font-size: 18px;
+      font-weight: 400;
+      line-height: 1.5;
 }
 
 h1,
@@ -676,7 +674,7 @@ ul {
   padding: 40px 20px 20px 20px;
   background-color: #0b0f0a;
   color: #cad1bb;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   overflow: hidden;
 }
 
